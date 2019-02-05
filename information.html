@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2019</title>
+
+    <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2019</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    
+    <div class="container">
+        <section class="eleven columns content">
+         <h3>Information</h3>
+        <p><strong>The satellite workshop will be held in conjuction with <a href="http://www.netsci2019.com">NetSci 2019</a>, the premiere international conference on network science held in Vermont, USA.</strong></p>                      
+</p>
+        <p>A number of practical information regarding traveling, accomodation and registration can be found on the website of the hosting event <a href="http://www.netsci2019.com">NetSci 2019</a>.</p>
+        <h4>Registration</h4>
+        <p>Information on how to register for both the main conference as well as the satellite can be found <a href="http://bit.ly/NetSci19Register">here</a>. Special rates for students, postdocs and academics are available. Registration opens on February 10.</p>      
+        
+  <p>Please note that there is a limited number of seats available for this satellite event. <strong>In addition</strong> to the registration with NetSci, we thus kindly ask you to register for this event directly with us, thus allowing us to plan the available space in advance. This registration only serves organizational purposes and is thus free and non-binding.</p>
+        
+<div id="eventbrite-widget-container-42860390582"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '42860390582',
+        iframeContainerId: 'eventbrite-widget-container-42860390582',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
+         
+        <h4>Accomodation</h4></p>
+        <p>A list of hotels close to the satellite venue will be available <a href="http://www.netsci2019.com">here</a>.</p>
+        <h4>Satellite date and venue</h4>
+	  <p>The satellite workshop will start on <strong>Tuesday, May 28 2018 at 08:30 am</strong> at <a href="https://xxx/">University of Verment</a> Room 5. Travel directions are <a href="http://www.netsci2019.com">available here</a>.
+        </section>
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+  
+      <footer class="container">
+        <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+        <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+      </footer>            
+  
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  
+    </body>
+  </html>
