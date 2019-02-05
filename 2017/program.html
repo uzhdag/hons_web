@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2017</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2018</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    <div class="container">
+      <!-- InstanceBeginEditable name="ContentArea" -->
+        <section class="eleven columns content">
+        <h3>Program</h3>
+        <p>When? <strong>Tuesday June 20 2017, 08:45 am - 06:00 pm</strong></p>
+        <p>Where? <strong>Room: White River 103, JW Marriot Indianapolis</strong></p>      			
+       
+        <p>We are proud to present a high-quality program with speakers covering different scientific discplines. Speakers can send their slides to <a href="mailto:ischoltes@ethz.ch">Ingo Scholtes</a> to make them available after the event.</p>       
+        
+        <style>
+		 th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+		</style>
+        <table width="100%">
+  <tr>
+    <th scope="col" width="100px"><strong>Time</strong></th>
+    <th scope="col"><strong>Presenter</strong></th>
+  </tr>
+  <tr  bgcolor="#D4DEF0">
+    <th scope="row">08:45 - 09:00</th>
+    <td>Organizers<br /><strong>Opening Statement</strong></td>
+  </tr>
+  <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Ingo Scholtes</em></td>
+  </tr>
+  <tr>
+    <th scope="row">09:00 - 09:30</th>
+    <td><a href="http://users.stat.umn.edu/~almquist/">Zack W. Almquist</a> (School of Statistics, University of Minnesota, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Stable Multiple Time Step Prediction from Dynamic Network Regression Models
+    <span style="width:500px;">Prediction and simulation from dynamic network models is a challenging problem for many of the popular frameworks employed for statistical inference on temporally evolving graphs. A major problem with many of the forward simulation procedures is the tendency for dynamic network models to become quickly degenerate -- i.e., the simulation/prediction procedure results in either null graphs or complete graphs. In this talk, we describe an algorithm for simulating a sequence of networks generated from a lagged dynamic network logistic regression (DNR), a subclass of Temporal Exponential Random Graph Models (TERGM). We introduce a smoothed estimator for forward prediction, based on a moving average of the change statistics obtained from a DNR model. Here, we focus on the implementation of the algorithm, providing a series of motivating examples with comparisons to dynamic network models from the literature. We find that our algorithm significantly improves multi-step prediction/simulation over standard forecasting from DNR. Furthermore, we show that our method performs comparably to existing dynamic network analysis frameworks (Stochastic Actor Oriented Models and Separable Temporal Exponential Random Graph Models) for small networks over short time periods, and significantly outperforms these approaches over long time time intervals and/or large networks.
+</span>
+    </span></td>
+  </tr>
+  
+   <tr>
+    <th scope="row">09:30 - 10:00</th>        	
+    <td><a href="http://www.jgyoung.ca/">Jean-Gabriel Young</a> (Universit&euml; Laval, Qu&euml;bec, (QC) Canada)<br />Invited Talk: <span class="dropt" title="Abstract">Construction of and efficient sampling from the simplicial configuration model
+    	<span style="width:500px;">It has been shown recently that the structure of complex systems is not always correctly represented by networks, due to the presence of many-body interactions. An increasingly popular alternative is to instead encode these interactions explicitly, using simplicial complexes (a generalization of graphs). With this new solution comes the need for principled null models. Drawing inspiration from the network literature, we propose a natural candidate: the simplicial configuration model. The core of our contribution is an efficient and uniform Markov chain Monte Carlo sampler for this model. In a short case study, we demonstrate its usefulness by investigating the relationship between the actual and randomized Betti numbers of a few real systems. This allows us to conclude|based on sound statistical arguments|that the structure of some systems is essentially random, while large-scale organizational principle intervene in others.</span>
+</span>	
+</td>                 
+  </tr>
+  
+  
+ 
+   <tr>
+    <th scope="row">10:00 - 10:30</th>
+     	 <td><a href="http://michalska-smith.com/">Matthew Michalska-Smith</a> (Department of Ecology and Evolution, University of Chicago, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Higher-order interactions stabilize dynamics in competitive network models
+    <span style="width:500px;">The difficulty of reconciling the staggering biodiversity found in tropical rainforests with classical theories of resource partitioning has led ecologists to explore neutral theories of coexistence in which all species have the same physiological parameters, and variations in species abundance arise from stochastic fluctuations. While initially neutral theory was criticized principally on its assumption of ecological equivalence, its many successes at reproducing empirical patterns made it grow into one of the best studied models in ecology. With time, the critique of neutral theory shifted from its assumptions to its predictions, highlighting that the theory cannot account for the large fluctuations species abundances observed empirically, and that it produces a strong correlation between a species' abundance and its age---contrary to empirical evidence. Here we propose an alternative theory of coexistence in which all species have different physiological rates, and interact with each other through a network of competitive interactions. We show that our models produce robust coexistence of many species even when parameters are drawn at random. Importantly, the dynamical stability of our models is due to higher-order interactions, in which the presence of a species influences the interaction between other species. The existence of higher-order interactions has been debated in ecology for decades, but their role in shaping ecological communities is still understudied. Our results show that higher-order interactions can have dramatic effects on the dynamics of ecological systems. When set in a stochastic framework, we recover many results from neutral theory, but improve on the relationship between age and abundance.
+
+</span>
+</span>
+</td>    
+  </tr>
+ 
+  
+    <tr bgcolor="#D4DEF0">
+    <th scope="row">10:30 - 11:00</th>
+    <td>Coffee Break</td>
+  </tr>
+   <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Martin Rosvall</em></td>
+  </tr>
+  <tr>
+    <th scope="row">11:00 - 11:30</th>
+    	  <td><a href="http://newton.kias.re.kr/~lshlj82/">Sang Hoon Lee</a> (Korea Institute for Advanced Study (KIAS), Seoul, South Korea)<br />Invited Talk: <span class="dropt" title="Abstract">Higher-order network structures in topologically associated domains of chromosome interactions
+    <span style="width:500px;">In this post-genome sequence era, the investigation of the genomic interactions on top of the identified sequence is of great importance. There exist nontrivial structural properties in the interactions, despite the fact that the sequence itself is a topologically simple one-dimensional structure. In particular, topologically associated domains (TADs), representing the group or modular structures, are crucial substructures of chromosome interactions. As the weighted network structures effectively capture the genomic interactions, the identification of TADs naturally corresponds to finding the modular or community structures in the genomic interaction network. In this work, we suggest a systematic way to identify TADs using network community identification algorithms. As a concrete example, we take a representative genomic interaction data called the Hi-C map and apply algorithms for network community detection, in particular, with the tunable resolutions parameter that enables us to find TADs with various resolutions. For validity of our method, we compare several known biological markers for the TAD boundary, such as the enrichment of transcriptional repressor CTCF and histone protein modification, with our systematically identified TADs.
+</span>
+</span>
+</td>   
+  </tr>
+ 
+   <tr>
+    <th scope="row">11:30 - 12:00</th>
+      <td><a href="http://www.isi.it/en/people/giovanni-petri">Giovanni Petri</a> (ISI Foundation, Torino, IT)<br />Invited Talk: <span class="dropt" title="Abstract">Structure and evolution of topological brain scaffolds
+    <span style="width:500px;">Topology is one of the oldest and more relevant branches of mathematics, and it has provided an expressive and affordable language which is progressively pervading many areas of biology, computer science and physics. 
+I will illustrate the type of novel insights that algebraic topological tools are providing for the study of the brain at the genetic, structural and functional levels. Using brain gene expression data, I first will construct a topological genetic skeleton, together with an appropriate simplicial configuration model, pointing to the differences in structure and function of different genetic pathways within the brain.  Then, by comparing the homological features of structural and functional brain networks across a large age span, I will highlight the presence of dynamically coordinated compensation mechanisms, suggesting that functional topology is conserved over the depleting structural substrate, and test this conjecture on data coming from a set of different altered brain states (LSD, psylocybin, sleep).</span>
+    </span></td>
+  </tr>
+   
+    <tr>
+    <th scope="row">12:00 - 12:30</th>
+    	<td><a href="http://www.zib.de/natasa.conrad/">Nata&scaron;a Djurdjevac-Conrad</a> (Department Numerical Analysis and Modelling, Zuse Institute Berlin (ZIB), DE)<br />Invited Talk: <span class="dropt" title="Abstract">Finding dominant structures in biological networks
+    <span style="width:500px;">Networks are often used as key determinants of structure, function and dynamics in systems that span biological, physical and social sciences. Dominant structures of such networks have been shown to correspond to main building blocks of complex systems. For example, in networks describing biological systems, dominant structures are often functional units like protein complexes and bio-chemical pathways. From a graph theoretic point of view, these structures can have a different form, i.e. they can be modules, cycles, long chains etc. In this talk, we will present our novel random-walk based method for finding various types of dominant structures on the example of networks coming from biological systems. We will address the problem of how these structures change when an undirected modular graph is transformed into a directed graph with dominant cycles. Finally, we will discuss new types of dominant structures that combine different available data from biological high throughput technologies.
+</span>
+    </span></td> 
+  </tr>
+   
+  
+  
+   <tr bgcolor="#D4DEF0">
+    <th scope="row">12:30 - 14:00</th>
+    <td>Lunch Break</td>
+  </tr>
+  <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Renaud Lambiotte</em></td>
+  </tr>
+  <tr>
+    <th scope="row">14:00 - 14:30</th>
+    	<td><a href="http://www.ingoscholtes.net/">Ingo Scholtes</a> (ETH Z&uuml;rich)<br />Contributed Talk: <span class="dropt" title="Abstract">Multi-Order Graphical Models: A Unified Perspective on Pathways and Temporal Networks
+			<span style="width:500px;">TBA</span></span>
+        </td>      
+  </tr>
+  
+    <tr>
+    <th scope="row">14:30 - 15:00</th>
+    	<td><a href="https://engineering.nd.edu/profiles/jxu">Jian Xu</a> (University of Notre Dame, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Representing higher-order dependencies in networks: methods, applications, and visualizations
+    <span style="width:500px;">Network-based representation has quickly emerged as the norm in representing rich interactions in complex systems. For example, given the trajectories of ships, a global shipping network can be constructed by assigning port-to-port traffic as edge weights. However, the conventional first-order (Markov property) networks thus built captures only pairwise shipping traffic between ports, disregarding the fact that ship movements can depend on multiple previous steps. The loss of information when representing raw data as networks can lead to inaccurate results in the downstream network analyses. In this talk I will introduce the Higher-order Network (HON), which remedies the gap between big data and the network representation by embedding higher-order dependencies in the network. I will show how existing network algorithms including clustering, ranking, and anomaly detection can be directly used on HON without modification, and influence observations in interdisciplinary applications such as modeling global shipping and web user browsing behavior. I will also demonstrate HoNVis, a software package for the visualization and interactive exploration of HON.</span>
+	</span>
+  	</td>       	 
+  </tr>
+  
+  
+    <tr>
+    <th scope="row">15:00 - 15:30</th>
+   	<td><a href="http://www.personal.ceu.hu/students/13/Alexey_Medvedev/">Alexey Medvedev</a> (Universit&eacute; de Namur, Belgium)<br />Invited Talk: <span class="dropt" title="Abstract">Influence of network cycles on the speed of spreading in non-Markovian spreading model
+    <span style="width:500px;">Spreading is one of the most important dynamic processes on complex networks, as it is the basis of a broad range of phenomena from epidemic contagion to diffusion of innovations. Many recent studies of non-Markovian spreading on complex networks exploit the property of tree-like neighborhood of a vertex in random graphs, thus simplifying the structure of underlying networks. However, there is a growing evidence that social networks do not share such property and that higher-order local topological structure influences the dynamics. We present the analytical study of the role of cycles in speeding up the non-Markovian SI spreading model on static and random networks. We concentrate on the case of i.i.d. inter-event times  following power-law distribution P(>t)~t-, where (0,1), and derive the conditions on the cycle structure and the exponent , for the process to run in finite expected time. The evidence of speeding up is also supported with empirical study of the SI spreading on the large mobile phone call dataset.</span>
+</span>
+</td>       	
+  </tr>
+    
+  
+  <tr  bgcolor="#D4DEF0">
+    <th scope="row">15:30 - 16:00</th>
+    <td>Coffee Break</td>
+  </tr>
+<tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Renaud Lambiotte</em></td>
+  </tr>
+   <tr>
+    <th scope="row">16:00 - 16:30</th>
+      <td><a href="http://hal.elte.hu/~pollner/">Peter Pollner</a> (E&ouml;tv&ouml;s-Lor&aacute;nd University, Hungary)<br />Invited Talk: <span class="dropt" title="Abstract">Describing clinical pathways with higher order methods
+    <span style="width:500px;">
+    We present a network of the flow of patients among clinical stations. Since several patients had more than a few number of visits in the same- or in a different hospital, the time ordered series of treatment locations can be modeled as a flow between the institutions. Beside the dates of the hospital visits the ICD-10 classification of the diagnosed diseases were also recorded, thus, the pathways can be labeled with the corresponding disease. Our study is based on electronic patient records from a countrywide anonymised database in Hungary. According to our results the patient flow network between health care institutions has memory both on the level of individual diseases and also when patients with different ICD-10 classification codes are aggregated. Separating clinical pathways into classes of different disease types reveals that the optimal memory length varies between treatment protocols. Therefore, the process shaping the patient pathways cannot be modelled by a traditional random walk on a network, and is more analogous to variable order Markov processes.
+</span>
+</span>
+</td> 
+  </tr>
+  
+    <tr>
+    <th scope="row">16:30 - 17:45</th>
+      <td>Live Demo Session: <br />Tools for Higher-Order Network Analysis
+</td> 
+  </tr>  
+ 
+ <tr  bgcolor="#D4DEF0">
+    <th scope="row">17:45 - 18:00</th>
+    <td>Organizers<br /><strong>Closing Statement</strong>  </td>
+  </tr>    
+</table>
+	  
+       </section>
+       <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+      
+      <footer class="container">
+        <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2018">Tweet</a>      
+        <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+      </footer>            
+      
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      
+      </body>
+      </html>
