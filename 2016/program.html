@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2016</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2016</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+
+    <div class="container">
+        <section class="eleven columns content">
+        <h3>Program</h3>
+        <p>When? <strong>Monday, May 30 2016, 09:15 am - 06:15 pm</strong></p>
+        <p>Where? <strong>Meeting room Dongkang B, K-Hotel, Seoul, Korea</strong></p>
+
+        <p>We are proud to present a high-quality program featuring a line-up of high-profile speakers from the field of complex networks, data mining and information science. Speakers can send their slides to <a href="mailto:ischoltes@ethz.ch">Ingo Scholtes</a> to make them available after the event.</p>
+        
+        <style>
+		 th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+		</style>
+        <table width="100%">
+  <tr>
+    <th scope="col" width="100px"><strong>Time</strong></th>
+    <th scope="col"><strong>Presenter</strong></th>
+  </tr>
+  <tr  bgcolor="#D4DEF0">
+    <th scope="row">09:15 - 09:30</th>
+    <td>Organizers<br /><strong>Opening Statement</strong></td>
+  </tr>
+  <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Taro Takaguchi</em></td>
+  </tr>
+  <tr>
+    <th scope="row">09:30 - 10:00</th>
+    <td><a href="https://scholar.google.com/citations?user=duBif0oAAAAJ&hl=en">Michele Starnini</a> (University of Barcelona, Spain)<br />Invited Talk: <span class="dropt" title="Abstract">Temporal network modeling of social interactions: from face-to-face contacts to echo chambers
+    <span style="width:500px;">The temporal network approach has been successfully applied within the framework of human dynamics modeling. Here we present a set of simple models able to reproduce different features of social interactions in the physical space, from empirical data of face-to-face contact networks to metapopulation structures, where individuals segregate into different groups. The models describe agents that perform a random walk in a two dimensional space and are endowed with a continuous variable, representing his status or opinion, that can be static or dynamical. The simplest case in which a quenched variable represents an individual's 'attractiveness', whose effect is to slow down the motion of people around them, is able to account for several structural and temporal properties of human contact networks, measured across a variety of different social venues. Relaxing the assumption of a immutable trait of individuals allows for the introduction of social influence, resulting in a progressive convergence of the status/opinion variable in response to physical proximity. The interplay between social influence and homophily, i.e. the preference of the individuals to be rounded by similar peers, leads to the emergence of a metapopulation scenario. Finally, the further introduction of confirmation bias in social interactions, defined as the tendency of an individual to favor opinions that match his own, leads to the emergence of echo chambers where different opinions can coexist also within the same group.
+</span>
+    </span></td>
+  </tr>
+  <tr>
+    <th scope="row">10:00 - 10:30</th>
+    	<td><a href="http://stat.kaist.ac.kr/~sonswoo/">Seung-Woo Son</a> (Hanyang University, Korea)<br />Invited Talk: <span class="dropt" title="Abstract">Percolation characteristics and structural properties of growing networks under an Achlioptas process
+    <span style="width:500px;">After the Achlioptas process (AP) was introduced, the number of papers on percolation phenomena has been literally exploding. Most of the existing studies, however, have focused only on the nature of phase transitions, not paying proper attention to the structural properties of the resulting networks. We compare the resulting network structure of the AP with random networks and find, through observations of the distributions of the shortest-path length and the betweenness centrality in the giant cluster, that the AP makes the network less clustered and more fragile. Such structural characteristics are more directly seen by using snapshots of the network structures and are explained by the fact that the AP suppresses the formation of large clusters more strongly than the random process does. These structural differences between the two processes are shown to be less noticeable in growing networks than in static ones.
+</span>
+    </span></td> 
+  </tr>
+  
+  <tr>
+    <th scope="row">10:30 - 11:00</th>
+    	<td><a href="http://perso.ens-lyon.fr/marton.karsai/Marton_Karsai/main.html">Marton Karsai</a> (Ecole Normale Sup&eacute;rieure de Lyon, France)<br />Invited Talk: <span class="dropt" title="Abstract">Asymptotic theory for the dynamic of networks with heterogenous social capital allocation
+    <span style="width:500px;">The formation of social networks requires investments in time and energy by each individual actor. Individuals however invest in developing social interactions heterogeneously and following very diverse tie maintenance strategies. In the first place not all individuals are equally active and may allocate their social capital in very diverse way, for instance by favouring the strengthening of a limited number of strong ties as opposed to favour the exploration of weak ties opening access to new information and communities.
+
+Here we analyse seven time-resolved datasets describing three different types of social interactions: scientific collaborations, Twitter mentions, and mobile phone calls. For all network datasets we define two functions statistically encoding the instantaneous activity and memory to allocate social capital among connected peers. In particular we observe in all datasets that the larger the number of social ties already activated by each node, the smaller the probability is of creating a new tie. Prompted by this statistical analysis, we propose a dynamic network model that includes the heterogeneous activity of nodes and memory-driven tie formation mechanisms. This model allows the definition of a formal Master Equation (ME) describing the evolution of the network connectivity structure with a solution providing the asymptotic form of the degree distribution and of the scaling relations linking node’s degree and activity. The proposed analytical framework is remarkably general and it can be solved for statistically different activity patterns.
+</span>
+</span>
+	<!--     </span> <a href=""><br />(Download slides)</a> -->
+</td>                 
+  </tr>
+  
+    <tr bgcolor="#D4DEF0">
+    <th scope="row">11:00 - 11:30</th>
+    <td>Coffee Break</td>
+  </tr>
+   <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Jinhyuk Yun</em></td>
+  </tr>
+  <tr>
+    <th scope="row">11:30 - 12:00</th>
+    	  <td><a href="http://tuvalu.santafe.edu/~aaronc/">Aaron Clauset</a> (University of Colorado at Boulder, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Detectability limits for inferring community structure in time-evolving networks
+    <span style="width:500px;">Networks whose structure evolves over time represent an important means for understanding the structural dynamics of many complex systems. In this talk, I will describe some recent results on the limits of the detectability of latent community structure in this setting. I'll first introduce a simple dynamic stochastic block model where nodes change their community memberships over time, but where edges are generated independently at each time step. In this setting (which is a special case of several existing models), we can use the cavity method from physics to derive the detectability threshold exactly as a function of the rate of change and the strength of the communities. Below this threshold, we claim that no efficient algorithm can identify the communities better than chance. However, we show that the dynamic detectability threshold can be below the detectability threshold for static graphs, if nodes do not change their community memberships too quickly. That is, by integrating information across time, we can "beat" the static detectability threshold to recover latent communities in very sparse regimes. I'll briefly describe two algorithms, one based on message passing and one on spectral clustering, that are optimal in the sense that they succeed all the way down to this threshold. I'll close with a few forward-looking comments about the limits of detectability in these higher-order network settings. <em>Joint work with Amir Ghasemian, Pan Zhang, Cristopher Moore and Leto Peel.</em>
+</span>
+</span>
+	<!--     <a href=""><br />(Download slides)</a> -->
+</td>   
+  </tr>
+  <tr>
+    <th scope="row">12:00 - 12:30</th>
+     	 <td><a href="http://www.naokimasuda.net/">Naoki Masuda</a> (University of Bristol, United Kingdom)<br />Invited Talk: <span class="dropt" title="Abstract">Immunizing networks by targeting collective influencers at a community level
+    <span style="width:500px;">There are various algorithms to immmunise networks, i.e., fragment
+networks as soon as possible in terms of the number of removed nodes, before possible spreading of infectious diseases occurs. Recently Morone and Makse proposed a powerful algorithm employing the non-backtracking matrix of given networks. We present an immunization algorithm derived from a combination of their algorithm and coarse graining of the network where we regard a community as a supernode, whereas we sequentially remove nodes as other algorithms do. The proposed algorithm outperforms the Morone-Makse and other algorithms when networks have community structure. This work is in collaboration with Teruyoshi Kobayashi.
+</span>
+</span>
+	<!--     <a href=""><br />(Download slides)</a> -->
+</td>    
+  </tr>
+    <tr>
+    <th scope="row">12:30 - 13:00</th>
+   	<td><a href="https://skewed.de/tiago">Tiago de Paula Peixoto</a> (University of Bremen, Germany)<br />Invited Talk: <span class="dropt" title="Abstract">Modeling sequences and temporal networks with dynamic community structures
+    <span style="width:500px;">Community-detection methods that describe large-scale patterns in the dynamics on and of networks suffer from effects of arbitrary time scales that need to be imposed a priori. We develop a variable-order hidden Markov chain model that generalizes the stochastic block model for discrete time-series as well as temporal networks. With our model, the relevant time scales are inferred from data, instead of being determined beforehand. The temporal model does not require the aggregation of events into discrete intervals, and instead takes full advantage of the time-ordering of the tokens or edges. When the edge ordering is random, we recover the traditional static block model as a special case. We formulate an efficient nonparametric Bayesian framework that can select the most appropriate Markov order and number of communities, based solely on statistical evidence and without overfitting.</span>
+</span>
+	<!--     <a href=""><br />(Download slides)</a> -->
+</td>       	
+  </tr>
+  
+   <tr bgcolor="#D4DEF0">
+    <th scope="row">13:00 - 14:30</th>
+    <td>Lunch Break</td>
+  </tr>
+  <tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Sang Hoon Lee</em></td>
+  </tr>
+  <tr>
+    <th scope="row">14:30 - 15:00</th>
+    	<td><a href="https://petterhol.me/">Petter Holme</a> (Sungkyunkwan University, Korea)<br />Invited Talk: <span class="dropt" title="Abstract">How contact-pattern representations affect the predictability of epidemics        <span style="width:500px;">To understand the contact patterns of a population — who is in contact with whom, and when the contacts happen — is crucial for modeling outbreaks of infectious disease. Traditional theoretical epidemiology assumes that any individual can meet any with equal probability. A more modern approach, network epidemiology, assumes people are connected into a static network over which the disease spreads. Newer yet, temporal network epidemiology, includes the time in the contact representations. In this paper, we investigate the effect of these successive inclusions of more information. Using empirical proximity data, we study both outbreak sizes from unknown sources, and from known states of ongoing outbreaks. In the first case, there are large differences going from a fully mixed simulation to a network, and from a network to a temporal network. In the second case, differences are smaller. We interpret these observations in terms of the temporal network structure of the data sets. For example, a fast overturn of nodes and links seem to make the temporal information more important.
+        </span></span>
+        <!-- <a href="slides/Slides_Peixoto.pdf"><br />(Download slides)</a> -->
+        </td>      
+  </tr>
+  
+    <tr>
+    <th scope="row">15:00 - 15:30</th>
+    	<td><a href="http://christianvestergaard.wordpress.com/">Christian L. Vestergaard</a> (Centre de Physique Theorique, France)<br />Invited Talk: <span class="dropt" title="Abstract">Effects of sampling on spreading processes on temporal networks
+    <span style="width:500px;">Time-resolved data of face-to-face interactions are increasingly used to inform detailed models of human behavior and of epidemic spreading. Complete coverage of the contacts occurring in a population is however generally unattainable, due for instance to limited participation rates or experimental constraints in spatial coverage. The former leads to population sampling, while the latter leads to spatial sampling. We here study how such sampling affects the outcome of studies of contagion processes using data-driven models, and we show that sampling may lead to a severe underestimation of the epidemic risk in a population. For population sampling, much of the statistical information concerning interaction dynamics is preserved in the sampled data. This allows us to design a systematic method to alleviate this issue by using the information contained in sampled data to construct surrogate versions of the unknown contacts. For spatial sampling, the situation is more complex: the bias induced by incomplete sampling here depends nonlinearly both on the fraction of contacts that are recorded and on the interplay between the timescales of population and spreading dynamics.
+</span>
+</span>
+            <!-- <a href=""><br />(Download slides)</a> -->
+  	</td>       	 
+  </tr>
+  
+      <tr>
+    <th scope="row">15:30 - 16:00</th>
+      <td><a href="http://www.tp.umu.se/~rocha/">Luis E C Rocha</a> (Karolinska Institute, Sweden)<br />Invited Talk: <span class="dropt" title="Abstract">Individual-based approximation for epidemics in time-evolving networks
+    <span style="width:500px;">Contact networks define potential pathways for the spread of infectious diseases. These networks typically evolve in time such that both the structure and timings of link activation regulate the dynamics on the networks. In this talk we will introduce the so-called individual-based approximation (IBA) for the susceptible-infected-recover (SIR) epidemic model on arbitrary dynamic networks. We will show that this approximation reproduces relatively well the average behavior of direct simulations on real-life temporal networks. Through a series of applications, from the effective reproduction number to source-detection of epidemics, we will show that the IBA approximation is a feasible alternative to study SIR epidemics on networks that evolve in time.
+</span>
+    </span></td>
+  </tr>
+  
+  <tr  bgcolor="#D4DEF0">
+    <th scope="row">16:00 - 16:30</th>
+    <td>Coffee Break</td>
+  </tr>
+<tr>
+  	<th scope="row"><em>Session chair:</em></th>
+    <td><em>Jinhyuk Yun</em></td>
+  </tr>
+   <tr>
+    <th scope="row">16:30 - 17:00</th>
+      <td><a href="http://yongyeol.com/">Yong-Yeol Ahn</a> (Indiana University Bloomington, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Complex contagion and optimal modularity
+    <span style="width:500px;">We investigate the impact of community structure on information diffusion with the linear threshold model. Our results demonstrate that modular structure may have counterintuitive effects on information diffusion when social reinforcement is present. We show that strong communities can facilitate global diffusion by enhancing local, intra-community spreading. Using both analytic approaches and numerical simulations, we demonstrate the existence of an optimal network modularity, where global diffusion requires the minimal number of early adopters.
+</span>
+</span>
+	<!--   <a href=""><br />(Download slides)</a> -->
+</td> 
+  </tr>
+  
+    <tr>
+    <th scope="row">17:00 - 17:30</th>
+      <td><a href="http://deim.urv.cat/~alexandre.arenas/">Alex Arenas</a> (Universitat Rovira i Virgili, Spain)<br />Invited Talk: <span class="dropt" title="Abstract">Assessing reliable human mobility patterns from higher-order memory in mobile communications
+    <span style="width:500px;">Understanding how people move within a geographic area, e.g. a city, a country or the whole world, is fundamental in several applications, from predicting the spatio-temporal evolution of an epidemics to inferring migration patterns. Mobile phone records provide an excellent proxy of human mobility, showing that movements exhibit a high level of memory. However, the precise role of memory in widely adopted proxies of mobility, as mobile phone records, is unknown. Here we use 560 millions of call detail records from Senegal to show that standard Markovian approaches, including higher-order ones, fail in capturing real mobility patterns and introduce spurious movements never observed in reality. We introduce an adaptive memory-driven approach to overcome such issues. At variance with Markovian models, it is able to realistically model conditional waiting times, i.e. the probability to stay in a specific area depending on individual's historical movements. Our results demonstrate that in standard mobility models the individuals tend to diffuse faster than what observed in reality, whereas the predictions of the adaptive memory approach significantly agree with observations. We show that, as a consequence, the incidence and the geographic spread of a disease could be inadequately estimated when standard approaches are used, with crucial implications on resources deployment and policy making during an epidemic outbreak.
+</span>
+</span>
+	<!--     <a href=""><br />(Download slides)</a> -->
+</td> 
+  </tr>
+  
+      <tr>
+    <th scope="row">17:30 - 18:00</th>
+      <td><a href="http://bingweb.binghamton.edu/~sayama/">Hiroki Sayama</a> (Binghamton University, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Going higher-order, literally: Exploration of graph product multilayer networks
+    <span style="width:500px;">We study graph product multilayer networks (GPMNs), a family of multilayer networks that can be obtained as a graph product of two or
+more factor networks. Three product operators are considered:
+Cartesian, direct (tensor), and strong products. GPMNs have identical
+intra-layer networks, and are multiplex if Cartesian product is used
+(but not otherwise). We show analytical/numerical relationships
+between GPMNs and their factor networks regarding their degree,
+adjacency and Laplacian spectra. We can use these spectral properties
+of GPMNs to derive asymptotic spectral properties of self-similar
+GPMNs, i.e., higher-order powers of a network, with the order
+increased to infinity. These spectral properties also provide
+implications for understanding the dynamics of GPMN-based dynamical
+models as well as spectral analysis of large-scale network data.
+</span>
+</span>
+	<!--     <a href=""><br />(Download slides)</a> -->
+</td> 
+  </tr>
+ 
+ <tr  bgcolor="#D4DEF0">
+    <th scope="row">18:00 - 18:15</th>
+    <td>Organizers<br /><strong>Closing Statement</strong> <!-- <a href=""><br />(Download slides)</a> --> </td>
+  </tr>    
+</table>
+             
+       </section>
+       <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+      
+      <footer class="container">
+        <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2016">Tweet</a>      
+        <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+      </footer>            
+      
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      
+      </body>
+      </html>
