@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2018</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2018</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    <div class="container">
+      <!-- InstanceBeginEditable name="ContentArea" -->
+        <section class="eleven columns content">
+        <h3>Program</h3>
+        <p>When? <strong>Tuesday June 12 2018, 08:45 - 18:15</strong></p>
+        <p>Where? <strong><a href="https://www.chateauform.com/fr/maison/lecole-de-musique/">L'Ecole de Musique - Republique</a></strong></p>
+        <section class="eleven columns content">
+        <p>We proudly present a high-quality program of speakers representing different lines of research on higher-order models of complex systems.</p>
+        <style>
+            th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+        </style>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <th scope="col" width="100px"><strong>Time</strong></th>
+                    <th scope="col"><strong>Presenter</strong></th>
+                </tr>
+                <tr bgcolor="#D4DEF0">
+                    <th scope="row">08:45 - 09:00</th>
+                    <td>Organizers<br />
+                    <strong>Opening Statement</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Track 1</strong></th>
+                    <td scope="row"><strong>Beyond Markov models</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">Track chair</th>
+                    <td scope="row"><a href="http://www.jianxu.net/en/">Jian Xu</a></td>
+                </tr>
+                <tr>
+                    <th>09:00 - 09:30</th>
+                    <td><a href="https://www.microsoft.com/en-us/research/people/kuansanw/">Kuansan Wang</a> (Microsoft Research, USA)<br />
+                    Invited Talk: <span title="Abstract" class="dropt">A continuous representation of complex systems<span style="width: auto;">Discrete mathematics has been playing a central role in studying a complex system that can be intuitively represented as a network where its constituent components and their relationships can be modeled as nodes and links of the network. In recent years, however, we have seen more and more real-life data with inherent complexities that challenge the efficacies of the discrete model and the implied symbolic computing underneath it. In this talk, we use the scholarly communication network as an example to highlight the utilities as well as the limitations of a network representation, and describe our recent effort in exploring an alternative framework where the components of a complex system are first mapped into a Hilbert space so that continuous operations can be used to analyzed their behaviors and interactions, both spatially and temporarily. We demonstrate how partially observed or missing observations may be inferred and potentially recovered with continuous operations such as vector calculus and neighborhood search. The talk will also describe an open dataset and software tools with which we continue our exploration on this subject and on quantifying academic impacts presented in another satellite of this conference.
+                    </span>
+                    </span></td>
+                </tr>
+                <tr>
+                    <th>09:30 - 10:00</th>
+                    <td><a href="https://www.cs.purdue.edu/homes/ribeirob/">Bruno Ribeiro</a> (Purdue University, USA)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">High Order Network Embeddings with Subgraph Pattern Neural Networks
+                    <span style="width: 500px;">In this talk we generalize traditional node/link prediction tasks in dynamic heterogeneous networks, to consider joint prediction over larger k-node induced subgraphs. The key insight is incorporating the unavoidable dependencies in the training observations of induced subgraphs into both the input features and the model architecture itself via high-order dependencies. The strength of the representation is its invariance to isomorphisms and varying local neighborhood sizes, while still being able to take node/edge labels into account in an inductive model which can be applied to unseen data.
+                    </span>
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>10:00 - 10:30</th>
+                    <td><a href="http://www.maths.qmul.ac.uk/~lacasa/main.html">Lucas Lacasa</a> (Queen Mary University of London, UK)<br />
+                    Invited Talk: <span title="Abstract" class="dropt">Detecting hidden layers in networks via stochastic decomposition of non-Markovian dynamics<span style="width: auto;">The architecture of many complex systems is well described by multiplex interaction networks, and their dynamics is often the result of several intertwined processes taking place at different levels. However only in a few cases can such multi-layered architecture be empirically observed, as one usually only has experimental access to such structure from an aggregated projection. A fundamental question is thus to determine whether the hidden underlying architecture of complex systems is better modelled as a single interaction layer or results from the aggregation and interplay of multiple layers. In this talk I will show that, by only using local information provided by a random walker navigating the aggregated network, it is possible to decide in a robust way if the underlying structure is a multiplex and, in the latter case, to determine the most probable number of layers. The proposed methodology would also allow to select the optimal architecture capable of reproducing non-Markovian dynamics taking place on networks, such as human or animal mobility. Applications of this methodology in biophysics are finally discussed.</span>
+                    </span>
+                    </td>
+                </tr>
+                <tr bgcolor="#D4DEF0">
+                    <th scope="row">10:30 - 11:00</th>
+                    <td scope="row">Coffee Break</td>
+                </tr>
+                <tr>
+                    <th>11:00 - 11:30</th>
+                    <td><a href="https://www.maths.ox.ac.uk/people/andrew.mellor">Andrew Mellor</a> (University of Oxford, UK)<br />
+                    Invited Talk: <span title="Abstract" class="dropt">Event Graphs: Time-unfolded Second-order Temporal Network Models<span style="width: auto;">Recent advances in data collection and storage have allowed both companies and researchers alike to collect data in real time. Much of this data comes in the form of 'events', or timestamped interactions, such as email, website clickstreams, or social media. This new data poses new challenges for modelling, especially if we wish to preserve the temporal features that this data permits. We propose a generalised framework to explore temporal networks using second-order time-unfolded models, called event graphs. Through examples we demonstrate how event graphs can be used to understand the topological-temporal structure of temporal networks, to model the evolution of collective behaviour, and to identify significant events in the network. Furthermore, we show that by modelling a temporal network as an event graph we can extend our analysis to non-dyadic interactions (known as hyper-events).</span></span></td>
+                </tr>
+                <tr>
+                    <th>11:30 - 12:00</th>
+                    <td><a href="https://scholar.google.com/citations?user=duBif0oAAAAJ&amp;hl=en">Michele Starnini</a> (University of Barcelona, Spain)<br />
+                    Invited Talk: <span title="Abstract" class="dropt">Equivalence between non-Markovian and Markovian dynamics in epidemic spreading processes<span style="width: auto;">A general formalism is introduced to allow the steady state of non-Markovian processes on networks to be reduced to equivalent Markovian processes on the same substrates. The example of an epidemic spreading process is considered in detail, where all the non-Markovian aspects are shown to be captured within a single parameter, the effective infection rate. Remarkably, this result is independent of the topology of the underlying network, as demonstrated by numerical simulations on two-dimensional lattices and various types of random networks. Furthermore, an analytic approximation for the effective infection rate is introduced, which enables the calculation of the critical point and of the critical exponents for the non-Markovian dynamics.</span></span></td>
+                </tr>
+                <tr>
+                    <th>12:00 - 12:30</th>
+                    <td><a href="http://perso.ens-lyon.fr/marton.karsai/">M&aacute;rton Karsai</a> (Ecole Normale Sup&eacute;rieure de Lyon, France)<br />
+                    Invited Talk: <span title="Abstract" class="dropt">Weighted event graphs: a higher-order static representation of temporal-networks<span style="width: auto;">The dynamics of diffusion-like processes on temporal networks are influenced by correlations in the times of contacts. This influence is particularly strong for processes where the spreading agent has a limited lifetime at nodes: disease spreading (recovery time), diffusion of rumors (lifetime of information), and passenger routing (maximum acceptable time between transfers). We introduce weighted event graphs as a powerful and fast framework for studying connectivity determined by time-respecting paths where the allowed waiting times between contacts have an upper limit. We study percolation on the weighted event graphs and in the underlying temporal networks, with simulated and real-world networks. We show that this type of temporal-network percolation is analogous to directed percolation, and that it can be characterized by multiple order parameters.</span></span></td>
+                </tr>
+                <tr bgcolor="#D4DEF0">
+                    <th scope="row">12:30 - 14:00</th>
+                    <td scope="row">Lunch Break</td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Track 2</strong></th>
+                    <td scope="row"><strong>Beyond dyadic interactions</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">Track chair</th>
+                    <td scope="row"><a href="https://michaelschaub.github.io/">Michael Schaub</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">14:00 - 14:30</th>
+                    <td><a href="https://www.cs.cornell.edu/~arb/">Austin Benson</a> (Cornell University, USA)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">Higher-order clustering in networks
+                    <span style="width: 500px;">A fundamental property of complex networks is the tendency for edges to cluster. The extent of the clustering is typically quantified by the clustering coefficient, which is the probability that a length-2 path is closed, i.e., induces a triangle in the network. However, higher-order cliques beyond triangles are crucial to understanding complex networks, and the clustering behavior with respect to such higher-order network structures is not well understood. Here we introduce higher-order clustering coefficients that measure the closure probability of higher-order network cliques and provide a more comprehensive view of how the edges of complex networks cluster. Our higher-order clustering coefficients are a natural generalization of the traditional clustering coefficient. We derive several properties about higher-order clustering coefficients and analyze them under common random graph models. Finally, we use higher-order clustering coefficients to gain new insights into the structure of real-world networks from several domains.</span></span><br />
+                    <a href="https://www.slideshare.net/arbenson/higherorder-clustering-in-networks/">[Slides]</a> <a href="https://github.com/arbenson/HigherOrderClustering.jl">[Software]</a> <a href="http://www.cs.cornell.edu/~arb/papers/higher-order-clustering-PRE-2018.pdf">[Paper]</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">14:30 - 15:00</th>
+                    <td><a href="https://people.maths.ox.ac.uk/beguerisse/">Mariano Beguerisse</a> (University of Oxford, UK)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">Interpretable groups from tensor clustering with algebraic constraints
+                    <span style="width: 500px;">In this talk I will present a novel tensor-based clustering method to extract sparse, low-dimensional structure from high-dimensional, multi-indexed datasets.  Specifically, this framework is designed to enable the detection of clusters in the presence of structural requirements encoded as algebraic constraints in a linear program. This clustering method is general and can be tailored to a variety of applications in science and industry. I will show an application of the method on a collection of experiments measuring the response of genetically diverse breast cancer cell lines to an array of ligands.  Each experiment consists of a cell line-ligand combination, and contains time-course measurements of the early-signalling kinases MAPK and AKT at two different ligand dose levels.  By imposing appropriate structural constraints and respecting the multi-indexed structure of the data, the clustering can be optimized for biological interpretation and therapeutic understanding. Finally, I will present a systematic, large-scale exploration of mechanistic models of MAPK-AKT crosstalk for each cluster.  This analysis captures the heterogeneity of breast cancer cell subtypes, and leads to hypotheses about the mechanisms by which cell lines respond to ligands.</span><br />
+                    </span> <a href="slides/Tensor_clustering.pdf">[Slides]</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">15:00 - 15:30</th>
+                    <td><a href="http://apatania.altervista.org/">Alice Patania</a> (Indiana University, USA)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">The high-order shape of collaborations
+                    <span style="width: 500px;">The structure of scientific collaborations has been the object of intense study both for its importance for innovation and scientific advancement, and as a model system for social group coordination and formation thanks to the availability of authorship data. Over the last years, complex networks approach to this problem have yielded important insights and shaped our understanding of scientific communities. We propose to complement the picture provided by network tools with that coming from using simplicial descriptions of publications and the corresponding topological methods. In this work, using papers as high-order representatives of scientific collaboration, we show that it is natural to extend the concept of triadic closure to simplicial complexes and show the presence of strong simplicial closure in a variety of different subjects. Through a topological study of the arXiv dataset we then show how homological cycles, that can intuitively be thought as hole in the network fabric, are an important part of the underlying community linking structure.</span>
+                    </span>
+                    </td>
+                </tr>
+                <tr bgcolor="#D4DEF0">
+                    <th scope="row">15:30 - 16:00</th>
+                    <td>Coffee break</td>
+                </tr>
+                <tr>
+                    <th scope="row">16:00 - 16:30</th>
+                    <td><a href="https://www.maths.ox.ac.uk/people/barbara.mahler">Barbara Mahler</a> (University of Oxford, UK)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">Analysis of contagion maps on a class of networks that are spatially embedded in a torus
+                    <span style="width: 500px;">Spreading processes on geometric networks are often influenced by a network&rsquo;s underlying spatial structure, and one can study the extent to which a spreading process follows that structure. In particular, considering a threshold contagion on a network whose nodes are embedded in a manifold and which has both &lsquo;geometric edges&rsquo; that respect the geometry of the underlying manifold, as well as &lsquo;non-geometric edges&rsquo; that are not constrained by the geometry of the underlying manifold, one can ask whether the contagion propagates as a wave front along the underlying geometry, or jumps via long non-geometric edges to remote areas of the network. <br />
+                    Taylor et al developed a methodology aimed at determining the spreading behavior of threshold contagion models on such &lsquo;noisy geometric networks&rsquo; [1]. This methodology is inspired by nonlinear dimensionality reduction and is centered around a so called &lsquo;contagion map&rsquo; from the network&rsquo;s nodes to a point cloud in high dimensional space. The structure of this point cloud reflects the spreading behavior of the contagion. We apply this methodology to a family of noisy-geometric networks that can be construed as being embedded in a torus. Constructing the contagion map and analyzing the structure of the resulting point cloud in terms of dimensionality, geometry and topology leads us to identify a region in the parameter space where the contagion propagates predominantly via wave front propagation. This consolidates contagion map as both a tool for investigating spreading behavior on spatial network, as well as a manifold learning technique. <br />
+                    [1] D. Taylor, F. Klimm, H. A. Harrington, M. Kramar, K. Mischaikow, M. A. Porter, and P. J. Mucha. Complex contagions for topological data analysis of networks. Nature Communications, 6(4423) (2015).
+                    </span>
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">16:30 - 17:00</th>
+                    <td><a href="https://www.salnikov.be/">Vsevolod Salnikov</a> (University of Namur, Belgium)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">Metamathematics with Persistent Homology
+                    <span style="width: 500px;">The structure of the state of art of scientific research is an important object of study motivated by the understanding of how research evolves and how new fields of study stem from existing research. In the last years complex networks tools contributed to provide insights on the structure of research, through the study of collaboration, citation and co-occurrence networks, keyword co-occurrence networks in particular proved useful to provide maps of knowledge inside a scientific domain. The network approach focuses on pairwise relationships, often compressing multidimensional data structures and inevitably losing information. In this paper we propose to adopt a simplicial complex approach to word co-occurrences, providing a natural framework for the study of higher-order relations in the space of scientific knowledge. Using topological methods we explore the shape of concepts in mathematical research, focusing on homological cycles, regions with low connectivity in the simplicial structure, and we discuss their role in the understanding of the evolution of scientific research. In addition, we map authors&rsquo; contribution to the conceptual space, and explore their role in the formation of homological cycles.
+                    </span>
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">17:00 - 17:30</th>
+                    <td><a href="https://www.sg.ethz.ch/team/people/gcasiraghi/">Giona Casiraghi</a> (ETH Z&uuml;rich, Switzerland)<br />
+                    Invited Talk: <span class="dropt" title="Abstract">Statistical Selection of non-Dyadic Models for Dyadic Data
+                    <span style="width: 500px;">The analysis of dyadic relational data from the perspective of networks has become a key method in the study of complex systems. However, despite this popularity, we still lack methods to answer a crucial question. Is it justified to model dyadic relational data using a network abstraction? Are higher-order models better suited for this task? In settings where observed interactions do not directly map to an underlying network topology, deciding how these interactions should be modelled is an important challenge. Closing this research gap requires model selection techniques that take into account both the complexity of a model and its explanatory power for the observed data. Going beyond previous works in network inference and graph identification, we exploit the broad class of generalised hypergeometric ensembles to address this gap. Building on this theoretical foundation, we develop a method to test hypotheses about the optimal representation of repeated dyadic interactions between the elements of a complex system. It particularly allows to test whether a network model is justified or not, or whether higher-order alternative models are better suited to explain the data.
+                    </span>
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">---</th>
+                    <td><strong>Live demo session</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">17:30 - 17:40</th>
+                    <td><a href="http://www.jianxu.net/en/">Jian Xu on behalf of Nitesh Chawla</a> (University of Notre Dame)<br />
+                    Anomaly detection in sequential data with higher-order network visualization tool <a href="http://www.higherordernetwork.com">HONVis</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">17:40 - 17:50</th>
+                    <td><a href="http://www.ingoscholtes.net">Ingo Scholtes</a> (ETH Z&uuml;rich)<br />
+                    Higher-order network analysis and visualisation with <a href="http://www.pathpy.net">pathpy2</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">17:50 - 18:00</th>
+                    <td><a href="https://www.umu.se/en/staff/daniel-edler/">Daniel Edler</a> (University of Ume&aring;)<br />
+                    Higher-order community detection with <a href="http://www.mapequation.org">InfoMap</a></td>
+                </tr>
+                <tr bgcolor="#D4DEF0">
+                    <th scope="row">18:00 - 18:15</th>
+                    <td>Organizers<br />
+                    <strong>Closing Statement</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        </section>
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+    </div>
+
+    <footer class="container">
+      <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+      <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+    </footer>            
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </body>
+</html>
