@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2015</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2015</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    <div class="container">
+        <section class="eleven columns content">
+        <h3>Program</h3>
+        <p>We are excited about a high-quality program featuring a line-up of high-profile speakers from the field of complex networks, data mining and information science. All talks are 30 minutes.</p>
+        <p>When? <strong>Tuesday, June 2nd 2015, 09:15 am - 06:15 pm</strong></p>
+        <p>Where? <strong>World Trace Center Zaragoza, Spain</strong></p>
+        <style>
+            th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+        </style>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <th width="100" scope="col"><strong>Time</strong></th>
+                    <th scope="col"><strong>Presenter</strong></th>
+                </tr>
+                <tr bgcolor="#d4def0">
+                    <th scope="row">09:15 - 09:30</th>
+                    <td>Organizers<br />
+                    <strong>Opening Statement</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">09:30 - 10:00</th>
+                    <td><a href="http://www.traag.net/">Vincent Traag</a> (KITLV, The Netherlands)<br />
+                    <span title="Abstract" class="dropt">Dynamics of social balance leading to cooperation &amp; structure in signed networks
+                    <span style="width: 500px;">Negative links, representing conflict or animosity, appear naturally in several types of networks. Although the signs of links are often ignored, they may have important consequences for the higher order structure. We will first discuss the community structure in such signed networks, and suggest how to detect communities. Communities in positive networks often relate to topics or functions, whereas communities in signed network may be more position or opinion based. Secondly, we will discuss how such a structure may come about. This is related to social balance theory, based on the adage "the enemy of my enemy is my friend".
+                    In particular, we will show that a simple matrix dynamical system almost always converges to a socially balanced state, where two mutually antagonistic groups emerge. Finally, this dynamical system relates to indirect reciprocity in the context of the evolution of cooperation. Paradoxically, although cooperation can arise, it also almost certainly leads to a split in two groups in the population.</span></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">10:00 - 10:30</th>
+                    <td><a href="http://www.tp.umu.se/~holme/">Petter Holme</a> (Sungkyunkwan University, Korea)<br />
+                    <span title="Abstract" class="dropt">How the information content of your contact pattern representation affects predictability of epidemics
+                    <span style="width: 500px;">To understand the contact patterns of a population&mdash;who is in contact with whom, and when the contacts happen&mdash;is crucial for modeling outbreaks of infectious disease. Traditional theoretical epidemiology assumes that any individual can meet any with equal probability. A more modern approach, network epidemiology, assumes people are connected into a static network over which the disease spreads. Newer yet, temporal network epidemiology, includes the time in the contact representations. In this paper, we investigate the effect of these successive inclusions of more information. Using empirical proximity data, we study both outbreak sizes from unknown sources, and from known states of ongoing outbreaks. In the first case, there are large differences going from a fully mixed simulation to a network, and from a network to a temporal network. In the second case, differences are smaller. We interpret these observations in terms of the temporal network structure of the data sets. For example, a fast overturn of nodes and links seem to make the temporal information more important.</span></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">10:30 - 11:00</th>
+                    <td><a href="http://eliassi.org/">Tina Eliassi-Rad</a> (Rutgers University, USA)<br />
+                    <span title="Abstract" class="dropt">The reasonable effectiveness of roles in networks
+                    <span style="width: 500px;">In this talk I will give a brief overview of role discovery in networks, where roles compactly represent structural behaviors of nodes.  I will then discuss why roles are so effective in many applications from transfer learning to re-identification to anomaly detection to mining time-evolving networks and multi-relational graphs.</span></span></td>
+                </tr>
+                <tr bgcolor="#d4def0">
+                    <th scope="row">11:00 - 11:30</th>
+                    <td>Coffee Break</td>
+                </tr>
+                <tr>
+                    <th scope="row">11:30 - 12:00</th>
+                    <td><a href="http://deim.urv.cat/~manlio.dedomenico/index.php">Manlio de Domenico</a> (Universitat Rovira i Virgili, Spain)<br />
+                    <span title="Abstract" class="dropt">Inferring human mobility from mobile phone data: an adaptive memory-driven model
+                    <span style="width: 500px;">Despite their bias, mobile phone data provide one the most powerful tools for sensing complex social systems, for human mobility studies and their applications, e.g. the spreading of transmittable diseases. In this work, we capitalize on high-quality mobile phone data from Senegal to introduce a novel memory-driven human mobility model that better captures existing correlations in mobility dynamics, being more suitable than classical memoryless models for realistic simulations oriented to policy-making based on short-term predictions. We consider a susceptible-exposed-infected-recovered (SEIR) transmission model within each arrondissement of Senegal, modeled as a meta-population with homogeneous mixing, and we show that memory in human mobility is responsible for dramatically slowing down the spreading of a disease.</span></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00 - 12:30</th>
+                    <td><a href="http://www.physics.umu.se/english/about-the-department/staff/?uid=lubo0002&amp;guiseId=211545&amp;orgId=c5b62378a9ad595a4a41ac5dfd7de0cb50307a5b&amp;name=Ludvig%20Bohlin">Ludvig Bohlin</a> and <a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a> (Ume&aring; University, Sweden)<br />
+                    <span title="Abstract" class="dropt">Community detection with variable-order Markov models applied to journal classification
+                    <span style="width: 500px;">To capture the overlapping modular organization of many real systems, we often require network flow models with higher-order memory. However, rarely will the highest possible order be supported for the entire system, and it is therefore necessary to combine first-, second-, and perhaps even higher-order dynamics for the analysis. In this presentation, we introduce a method that uses model selection to find the appropriate memory order, and apply it on the problem of classifying scientific journals. Our novel method overcomes problems related to current classifications schemes and is simultaneously transparent, computationally feasible, and able to capture multidisciplinary journals.</span></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">12:30 - 13:00</th>
+                    <td><a href="http://perso.ens-lyon.fr/marton.karsai/Marton_Karsai/main.html">M&aacute;rton Karsai</a> (Ecole Normale Sup&eacute;rieure de Lyon, France)<br />
+                    <span title="Abstract" class="dropt">Time-varying network model with adjustable community structure and weight correlations
+                    <span style="width: 500px;">Social network structure can be viewed as an aggregate of temporal interactions between individuals. These interactions are driven by individual decision-making processes. In order to interpret the emerging structure and dynamics of social interactions, one needs to look at the level of single events between interacting peers and understand the function of the underlying social mechanisms. Although the emerging field of temporal networks and the analysis of longitudinal temporal datasets have helped to identify such mechanisms, there is still a lack of adjustable time-varying network models that allow investigating the effects of specific mechanisms on network structure in a controlled fashion. In this work, we capitalize on high-quality mobile phone data from Senegal to introduce a novel memory-driven human mobility model that better captures existing correlations in mobility dynamics, being more suitable than classical memoryless models for realistic simulations oriented to policy-making based on short-term predictions. We consider a susceptible-exposed-infected-recovered (SEIR) transmission model within each arrondissement of Senegal, modeled as a meta-population with homogeneous mixing, and we show that memory in human mobility is responsible for dramatically slowing down the spreading of a disease.</span>
+                    </span></td>
+                </tr>
+                <tr>
+                    <th scope="row">13:00 - 13:30</th>
+                    <td><a href="http://wwwf.imperial.ac.uk/~mts09/">Michael Schaub</a> (University of Namur, Belgium)<br />
+                    <span title="Abstract" class="dropt">Memory networks and higher-order dynamics
+                    <span style="width: 500px;">One of the primary goals in Network Science is to understand the interplay between structure and dynamics in large systems. In many cases the network of interconnections between the agents may interpreted as the state space of a process acting on the network. For instance the state space of a simple random walk process acting on the network has exactly the same form as the network itself. Thanks to this dichotomy we are able to gain insights about the structure of a network by investigating the properties of this diffusion process acting on the network, and vice versa. More recently, however, it has been realized that in order to describe more realistic phenomena on networks one has to consider system representations with state spaces that are not in a simple correspondence with the underlying network of agents. One example are multiplex networks, in which the state space has to be enlarged to include multiple kinds of interactions. Similarly, it has been observed that processes in real networks often incur some form of memory. For instance, in a diffusion process the present actions of a random walker may be dependent on the temporal path of nodes previously visited, and not just on the node she is currently on. To model such a process on can consider higher order Markov processes, so called "memory networks". Previously it has been shown how these memory networks can be used in conjunction with the map-equation framework to gain further insight about the community structure in the network. In this talk we will highlight how such representations extend seamlessly to other community detections tools, such as Modularity, spectral clustering or the Markov stability framework. We will further discuss how a memory network representation can be obtained even if the data is only given in the form of "snapshots" of a temporal network, thus making the memory network representation a useful tool for the analysis of temporal networks in general.</span></span></td>
+                </tr>
+                <tr bgcolor="#d4def0">
+                    <th scope="row">13:30 - 15:00</th>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr>
+                    <th scope="row">15:00 - 15:30</th>
+                    <td><a href="http://www.ingoscholtes.net">Ingo Scholtes</a> (ETH Z&uuml;rich, Switzerland)<br />
+                    <span title="Abstract" class="dropt">Analyzing time-stamped network data: When ordering matters
+                    <span style="width: 500px;">Recent research has highlighted limitations of studying complex systems with time-varying topologies from the perspective of static, time-aggregated networks. Non-Markovian characteristics resulting from the ordering of interactions in time-varying networks were identified as one important mechanism that alters causality and affects dynamical processes. So far, an analytical explanation for this phenomenon and for the significant variations observed across different systems is missing. Summarizing our recent research in this area, in this talk we will introduce a methodology that allows to analytically predict causality-driven changes of diffusion speed in non-Markovian time-varying networks. In particular, we will summarize the so-called "ensemble perspective" which is commonly applied in the stochastic modeling of complex networks, and we will show first results on the extension of this ensemble perspective to time-varying networks.
+                    </span></span><a href="slides/Slides_Scholtes_2015.pdf"><br />
+                    (Download slides)</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">15:30 - 16:00</th>
+                    <td><a href="http://www.skewed.de/tiago">Tiago Peixoto</a> (University of Bremen, Germany)<br />
+                    <span title="Abstract" class="dropt">Inferring the mesoscale structure of layered, edge-valued and time-varying networks
+                    <span style="width: 500px;">The structural properties of large-scale complex networks are often a result of unknown generative processes that cannot be directly observed, and need to be inferred only from their final outcome. Of particular importance are the so-called large or mesoscale structures, often represented by modules - groups of nodes with similar topological patterns - for which general formative mechanisms (or even unified descriptions) have not yet been fully identified. More recently, it has been increasingly recognized that most network systems are in fact composed of different types of interactions (represented as layers or attributes on the edges) and change in time, and that these features cannot be neglected when attempting to identify mechanisms of network formation.  Since these elaborations increase the effective dimension of the network description, they are a double-edged sword: On one hand, the inclusion of layered or temporal structure can reveal important patterns that are otherwise obscured, while on the other hand the uncontrolled incorporation of many uncorrelated variables can in fact hide patterns which would otherwise be detected. In this talk, I present a robust and principled method to tackle this problem, by defining general generative models of modular network structure, incorporating layered, attributed and time-varying properties, together with alternative generative processes incorporating hierarchical structure, degree correction and overlapping groups, as well as a Bayesian methodology to infer the parameters from data and select between model variants. I show that the method is capable of revealing hidden structure in layered, edge-valued and time-varying networks, and that the most appropriate level of granularity with respect to the added dimensions can be reliably identified. I illustrate the approach on a variety of empirical systems, including a social network of physicians, the voting correlations of deputies in the Brazilian national congress, the global airport network, and a proximity network of high-school students.
+                    </span></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">16:00 - 16:30</th>
+                    <td><strong>Live demo session I</strong><br />
+                    Tools to analyse relational data from a higher-order networks perspective</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a>: Higher-order community detection using <a href="http://www.mapequation.org/">InfoMap</a></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><a href="http://www.skewed.de/tiago">Tiago Peixoto</a>: Analysis and visualisation of (multi-layer) networks with <a href="https://graph-tool.skewed.de/">GraphTool</a> <a href="slides/Peixoto.html">[ipython Tutorial]</a></td>
+                </tr>
+                <tr bgcolor="#d4def0">
+                    <th scope="row">16:30 - 17:00</th>
+                    <td>Coffee Break</td>
+                </tr>
+                <tr>
+                    <th scope="row">17:00 - 17:30</th>
+                    <td><strong>Live demo session II</strong><br />
+                    Tools to analyse relational data from a higher-order networks perspective</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><a href="http://www.ingoscholtes.net">Ingo Scholtes</a>: Higher-order analysis of time-stamped network data using the module <a href="https://github.com/IngoScholtes/pyTempNets">pyTempNet</a> <a href="https://www.sg.ethz.ch/team/people/ischoltes/research-insights/temporal-networks-demo/">[ipython Tutorial]</a></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td><a href="http://www.traag.net/">Vincent Traag</a>: Community detection in python using the module <a href="http://www.traag.net/code/">louvain</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">17:30 - 18:00</th>
+                    <td><a href="http://stanford.edu/~arbenson/">Austin R. Benson</a> (Stanford University, CA, USA)<br />
+                    <span title="Abstract" class="dropt">Motif-based Spectral Clustering
+                    <span style="width: 500px;">Two of the fundamental analyses of networks are clustering (partitioning, community detection) and the frequency of network motifs, or patterns of links between nodes. However, these analyses are disjoint as community structure is typically defined by link relationships and ignore motifs. Here, we unify network communities and motif analysis by clustering networks based on motifs. We show several examples of motif-based communities in networks from a variety of scientific domains with scales ranging from a few hundred to over one billion links.</span></span>&nbsp; </td>
+                </tr>
+                <tr bgcolor="#d4def0">
+                    <th scope="row">18:00 - 18:15</th>
+                    <td>Organizers<br />
+                    <strong>Closing Statement</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <h3>Links provided by participants</h3>
+        <p>As indicated during the workshop's live demo session, in addition to the tools presented in the workshop, here we include some links to that we were made aware of by participants.</p>
+        <ol>
+            <li><a href="https://github.com/ike002jp/npartite/blob/master/README_en.md">Community detection in n-partite networks</a> (contributed by <a href="http://www.ai.cs.titech.ac.jp/">Tsuyoshi Murata</a>)</li>
+            <li><a href="https://github.com/hartmutlentz/TemporalNetworkAccessibility">Software to compute accessibility in temporal networks</a> (contributed by <a href="https://www.fli.bund.de/de/startseite/institute/institut-fuer-epidemiologie/wissenschaftler/dr-hartmut-lentz.html">Hartmut Lentz</a>)</li>
+        </ol>
+        </section>
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+
+<footer class="container">
+  <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2015">Tweet</a>      
+  <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+  <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+</footer>            
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>

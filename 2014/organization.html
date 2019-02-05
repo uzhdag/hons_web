@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2014</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2014</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    <div class="container">
+
+        <section class="eleven columns content">
+        <article>
+        <h3>Organizing Committee</h3>
+		<ul>
+          <li><a href="http://www.lambiotte.be/">Renaud Lambiotte</a> <br />
+            <a href="http://www.unamur.be/en/sci/smat">Department of Mathematics/Naxys</a><br />
+            <a href="https://www.unamur.be/">University of Namur</a><br />
+            Belgium</li>
+          <li><a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a> <br />
+            <a href="http://www.physics.umu.se/english/">Department of Physics</a><br />
+            <a href="http://www.umu.se/">Ume&aring; University</a><br />
+            Sweden</li>
+          <li><a href="http://www.ingoscholtes.net">Ingo Scholtes</a> <br />
+            <a href="http://www.sg.ethz.ch/">Chair of Systems Design</a><br />
+            <a href="https://www.ethz.ch/">ETH Z&uuml;rich</a><br />
+            Switzerland</li>
+	    </ul>
+        </article>      
+        </section>
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+
+<footer class="container">
+  <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2014">Tweet</a>      
+  <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+  <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+</footer>            
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>

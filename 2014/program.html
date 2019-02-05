@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2014</title>
+
+    <link rel="stylesheet" href="../stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="../stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="../javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });      
+      });      
+    </script>  
+  </head>
+
+  <body>    
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2014</a></h3>          
+          <div class="menu full">          
+            <ul id="nav_menu_main"></ul>
+          </div>          
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>              
+                <ul id="nav_menu_small"></ul>              
+              </li>
+            </ul>
+          </div>
+
+        </div>        
+      </div>
+    </header>
+    
+    <div class="container">
+        <section class="eleven columns content">
+        <h3>Program</h3>
+        <p>We are proud to present a high-quality program featuring a line-up of high-profile speakers from the field of complex networks, data mining and information science. Slides of talks will be made available soon. Speakers can send their slides to <a href="mailto:ischoltes@ethz.ch">Ingo Scholtes</a></p>
+        <p>When? <strong>Tuesday, June 3rd 2014, 09:15 am - 05:45 pm</strong></p>
+        <p>Where? <strong>University of California, Berkeley, CA, USA</strong></p>
+        <style>
+		 th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+		</style>
+        <table width="100%">
+  <tr>
+    <th scope="col" width="100px"><strong>Time</strong></th>
+    <th scope="col"><strong>Presenter</strong></th>
+  </tr>
+  <tr  bgcolor="#D4DEF0">
+    <th scope="row">09:15 - 09:30</th>
+    <td>Organizers<br /><strong>Opening Statement</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">09:30 - 10:00</th>
+        <td><a href="http://www.skewed.de">Tiago de Paula Peixoto</a> (University of Bremen, Germany)<br />Invited Talk: <span class="dropt" title="Abstract">Hierarchical and evolved large-scale network structures<span style="width:500px;">Many empirical network systems possess heterogeneous large-scale structures that are distributed across many size scales. The precise characterization of this multilevel structure is important so that more dominating features can be distinguished from secondary ones, giving potential insight not only into the mechanisms responsible for the network structure, but also into the central aspects governing its function.<br />
+
+In this talk I present a principled and robust method of obtaining such multilevel structures from network data. It is based on the definition of a generative model that encapsulates a nested sequence of stochastic block models, which can encode general topological patterns at multiple scales. I show how the parameters of this model can be inferred from empirical data, and that, in addition to providing the desired topological hierarchy, this method also lifts some outstanding limitations present in other approaches, such as the inability of simultaneously detecting small groups and of separating signal from noise.<br />
+
+In addition to being fitted to empirical data, such generative models can be used to answer fundamental questions on the relationship between structure and function of networks. In the second part of the talk, I show how one can use stochastic block models to build maximum entropy null models of networks which are evolved to perform a certain task. I focus on robustness against random failures and targeted attacks, as well as dynamic stability, and show that centralized core-periphery structures emerge as the most likely to occur in the absence of topological constraints. When topological constraints or trade-offs between competing robustness criteria are introduced, more diverse emerging large-scale structures are obtained.
+</span></span>
+        <a href="slides/Slides_Peixoto.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr>
+    <th scope="row">10:00 - 10:30</th>
+    <td><a href="http://cs.unm.edu/~aaron/blog/">Aaron Clauset</a> (University of Colorado Boulder, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Inferring Large-Scale Patterns in Complex Networks
+    <span style="width:500px;">Networks provide a rich and mathematically principled approach to characterizing the structure of complex systems. A common step in understanding the structure and function of real-world networks is to characterize their large-scale organizational pattern via community detection, in which we aim to find a network partition that groups together vertices with similar connectivity patterns. Modern networks, however, often include rich auxiliary information, in the form of edge weights, vertex attributes, multi-partite structures, and edges that vary over time, and we often wish to incorporate these details into the network analysis.
+
+In this talk, I will describe general framework, based on the popular stochastic block model, for inferring large-scale patterns in complex networks. This approach recasts the problem of community detection as one of statistical inference, which imports many powerful tools from statistics, physics and machine learning. Furthermore, this model naturally counts a wide variety of specific large-scale patterns as special cases, and can be extended to learn from most types of auxiliary information. As positive examples of this approach, I will describe recent work from my group on inferring communities in edge-weighted networks or in bipartite networks, and on change-point detection in evolving networks.
+</span>
+    </span><a href="slides/Slides_Clauset.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr bgcolor="#D4DEF0">
+    <th scope="row">10:30 - 11:00</th>
+    <td>Coffee Break</td>
+  </tr>
+    <tr>
+    <th scope="row">11:00 - 11:30</th>
+      <td><a href="http://cs.stanford.edu/people/jure/">Jure Leskovec</a> (Stanford University, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Information Diffusion Leads to Bursty Evolution of Online Networks
+    <span style="width:500px;">In online social media systems users are not only posting, consuming, and resharing content, but also creating new and destroying existing connections in the underlying social network. While each of these two types of dynamics has individually been studied in the past, much less is known about the connection between the two. How does user information posting and seeking behavior interact with the evolution of the underlying social network structure?
+In this talk we will examine ways in which network structure reacts to users posting and sharing content. We examine the complete dynamics of the Twitter information network, where users post and reshare information while they also create and destroy connections. We find that the dynamics of network structure can be characterized by steady rates of change, interrupted by sudden bursts. Information diffusion in the form of cascades of post re-sharing often creates such sudden bursts of new connections, which significantly change users’ local network structure. These bursts transform users’ networks of followers to become structurally more cohesive as well as more homogeneous in terms of follower interests. We develop a model that quantifies the dynamics of the network and the occurrence of these bursts as a function of the information spreading through the network. The model can successfully predict which information diffusion events will lead to bursts in network dynamics.
+</span>
+    </span></td>    
+  </tr>
+  <tr>
+  <tr>
+    <th scope="row">11:30 - 12:00</th>
+    <td><a href="http://www.tp.umu.se/~rocha/">Luis E C Rocha</a> (Karolinska Institute, Stockholm, Sweden)<br />Invited Talk: <span class="dropt" title="Abstract">TempoRank: Random walk centrality for temporal networks
+    <span style="width:500px;">Nodes can be ranked according to their relative importance within the network. We propose a centrality measure for temporal networks based on random walks under periodic boundary conditions. We find that in temporal networks the stationary density of a random walk is proportional to the in-strength of the so-called effective network, a weighted and directed network explicitly constructed from the original sequence of transition matrices. The stationary density depends on the sojourn probability which regulates the tendency of the walker to stay in the node and on the temporal resolution of the data. We apply our method to human interaction networks and show that although it is important for a node to be connected to another node with many random walkers at the right moment, this effect is negligible in practice when the time order of link activation is included.
+</span>
+    </span></td>
+  </tr>
+  <tr>
+    <th scope="row">12:00 - 12:20</th>
+    <td><a href="http://www.lambiotte.be">Renaud Lambiotte</a> (University of Namur, Belgium)<br /><strong>Networks with memory</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">12:20 - 12:40</th>
+      <td><a href="http://www.umu.se/sok/english/staff-directory/view-person?uid=lubo0002">Ludvig Bohlin</a> (Ume&aring; University, Sweden)<br /><span class="dropt" title="Abstract">Robustness of journal rankings by network flows with different amount of memory
+    <span style="width:500px;">As the number of scientific journals has multiplied, journal rankings have become increasingly important for scientific decisions. From submissions and subscriptions to grants and hirings, researchers, policy makers, and funding agencies make important decisions with influence from journal rankings such as the ISI journal impact factor. Typically, the rankings are derived from the citation network between a selection of journals and unavoidably depend on this selection. However, little is known about how robust rankings are to the selection of included journals. Here we compare the robustness of three journal rankings based on network flows induced on citation networks. They model pathways of researchers navigating scholarly literature, stepping between journals and remembering their previous steps to different degree: zero-step memory as impact factor, one-step memory as Eigenfactor, and two-step memory, corresponding to zero-, first-, and second-order Markov models of citation flow between journals. We conclude that a second-order Markov model is slightly more robust, because it combines the advantages of the lower-order models: perturbations that remain local and citation weights that depend on journal importance. However, the robustness gain comes at the cost of requiring more data, because the second-order Markov model requires citation data from twice as long a period.
+</span>
+    </span> <a href="slides/Slides_Bohlin.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr>
+    <th scope="row">12:40 - 13:00</th>
+    <td><a href="http://www.ingoscholtes.net">Ingo Scholtes</a> (ETH Z&uuml;rich, Switzerland)<br /><span class="dropt" title="Abstract">Higher-Order Aggregate Representations of Temporal Networks<span style="width:500px;">It has recently been shown that non-Markovian properties (or memory effects) in the contact sequences of temporal networks significantly affect dynamical processes, community detection algorithms as well as centrality measures. In particular, these effects highlight that typically employed time-aggregated representations of temporal networks give misleading results about the systemic properties of time-varying complex systems. In this talk I will introduce a simple higher-order representation of non-Markovian temporal networks which is based on the statics of time-respecting paths in termporal networks and which thus preserves causality. I will show that this higher-order representation can be used to predict diffusion dynamics in real-world temporal networks, visualise communities and compute node centrality measures that take into acount the time dimension of dynamic networked systems.
+</span>
+    </span> <a href="slides/Slides_Scholtes.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr bgcolor="#D4DEF0">
+    <th scope="row">13:00 - 14:10</th>
+    <td>Lunch Break</td>
+  </tr>
+  <tr>
+    <th scope="row">14:10 - 14:30</th>
+    <td><a href="http://bingweb.binghamton.edu/~sayama/">Hiroki Sayama</a> (State University of New York, USA)<br /><span class="dropt" title="Abstract">Modeling Dynamics *OF* and *ON* Networks Simultaneously: Theory-Driven and Data-Driven Approaches 
+    <span style="width:500px;">It is widely practiced today in various research areas across disciplinary boundaries to abstract and analyze a complex system as a network made of nodes and links. However, tools for analyzing such networks are largely based on statistical and topological concepts, while they still remain somewhat separated from dynamical systems concepts, which would be equally important for the understanding of complex systems. Since many real-world complex systems show a deep coupling between structural development ("dynamics *of* networks") and functional behavior ("dynamics *on* networks"), it is crucial to build a higher-order modeling framework that integrates those two dynamics seamlessly. To address this need, we have been developing a modeling framework that can effectively describe dynamics *of* and *on* networks simultaneously using labeled graph rewritings, under financial support from the US National Science Foundation (http://coco.binghamton.edu/NSF-CDI.html). This contributed talk will give a brief overview of our project, describing mathematical formulation of the modeling framework and the developed computational tools for automatic discovery of dynamical rules from empirical data that involve both state transition and topological transformation of networks. Applicability for prediction, classification and anomaly detection of network evolution will also be discussed.
+</span>
+    </span> <a href="slides/Slides_Sayama.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr>
+    <th scope="row">14:30 - 14:50</th>
+    <td><a href="http://www.imperial.ac.uk/AP/faces/pages/read/Home.jsp?person=michael.schaub09&_adf.ctrl-state=efz6qp0t3_3&_afrRedirect=485582161777968">Michael Schaub</a> (Imperial College London, United Kingdom)<br /><span class="dropt" title="Abstract">Structure of complex networks: Quantifying edge-to-edge relations by failure-induced flow redistribution<span style="width:500px;">The analysis of complex networks has so far revolved mainly around the role of nodes and meaningful node communities. However, the dynamics of interconnected systems is commonly focalized on edge processes, and a dual edge-centric perspective can often prove more natural. To investigate the dynamical interplay between edges in a network, we present theoretical measures to quantify edge-to-edge relations. We derive the flow-redistribution matrix, which describes a topological property of the network in the edgespace of the graph, inspired by the notion line failures in electrical circuits. We show how the flowredistribution matrix can be decomposed into two measures with precise graph theoretic interpretations: the edge-to-edge transfer function, measuring the projection of the input flow in the cut-space of the graph, and the edge embeddedness, quantifying how strongly the edge features in the (weighted) cycles of the network. We apply these tools to reveal potentially non-local interactions between edges and showcase the general applicability of our edge-centric framework through constructive examples, as well as analyses of the Iberian Power grid, traffic flow in road networks, and the neuronal network of the nematode C.elegans.
+</span>
+    </span> <a href="slides/Slides_Schaub.pdf"><br />(Download slides)</a></td>
+  </tr>
+  <tr>
+    <th scope="row">14:50 - 15:10</th>
+    <td><a href="http://michael.szell.net/">Michael Szell</a> (MIT, USA)<br /><span class="dropt" title="Abstract">Higher-order models in human mobility and interactions<span style="width:500px;">The increasing availability of positional and communication data sets of humans, from mobile phone traces to GPS coordinates of large vehicle fleets, has increased our understanding of human mobility and human interactions. Although we have gained considerable insight into laws of human travel on a first order in the past years, the role of higher order memory effects, and the impact of socio-economic factors is not yet clear. By analyzing the topological communities of several country-wide phone communication networks, we first present evidence for a strong influence of socio-economic borders on human interactions. Then, observing the same effect in the movements of thousands of players on a network-shaped virtual online universe, we develop a model with long-term memory which is required to recover the statistical properties of the trajectories. Finally, we explore how a new interaction model that takes into account socio-economic boundaries on multiple scales can improve the predictive power on human interactions over models which only make use of geographic distances.
+</span>
+    </span></td>
+  </tr>
+  <tr>
+    <th scope="row">15:10 - 15:30</th>
+    <td><a href="http://peptibase.cs.biu.ac.il/?page_id=78">Hilla Brot</a> (Bar-Ilan University, Israel)<br />
+       <span class="dropt" title="Abstract">Directional triadic closure and edge deletion mechanism induce asymmetry in directed edge properties<span style="width:500px;">Two of the most consistent features of real world networks are the scale free degree distributions and the high clustering coefficients. In directed networks, the in and out clustering coefficients differ one from each other. Similarly the in and out degree often have different distributions. However, most network generation models do not incorporate the differences between in and out degree properties. We here propose a way to incorporate directionality into network generation models explain these differences as well, as the correlation between the in and out degrees. We here use one of the most realistic models - the triadic closure model to show that, the dynamics of the model and the resulting statistical properties of the network are most sensitive to the way edges are removed in the model, highlighting the crucial importance of edge removal to the properties of real world networks. A comparison of the model to real networks shows that the variation of a single parameter can explain the large variability of in and out degree distributions and clustering coefficients. One important insight emerging from this model is its sensitivity to the edge deletion mechanism We further show using a generic birth death process that a non-symmetric edge deletion process must be included in any model for the difference between the in and out degree properties and including differences in the edge addition process will not suffice. In addition, we discuss the experimental evidences for differences between the properties of incoming and outgoing edges and show the similarity between the dynamics exhibited by the model and the one observed in real world networks. A direct comparison of the model dynamics with the observed edge addition and removal dynamics in real networks shows that while quite simple, the model properly describes both the edge addition and the edge deletion in these networks.
+</span>
+    </span><a href="slides/Slides_Brot.pdf"><br />(Download slides)</a>
+    </td>
+  </tr>
+    <tr>
+    <th scope="row">15:30 - 16:00</th>
+       <td><a href="http://friggeri.net/">Adrien Friggeri</a> (Facebook, USA)<br />Invited Talk: <strong>Rumor Cascades</strong></td>
+  </tr>  
+<tr  bgcolor="#D4DEF0">
+    <th scope="row">16:00 - 16:30</th>
+    <td>Coffee Break</td>
+  </tr>
+  <tr>
+    <th scope="row">16:30 - 17:00</th>
+    <td><a href="http://www.sg.ethz.ch/team/people/fschweitzer/">Frank Schweitzer</a> (ETH Z&uuml;rich, Switzerland)<br />Invited Talk: <strong>Beyond aggregated networks: What we got wrong and will get right</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">17:00 - 17:30</th>
+    <td><a href="http://www.guidocaldarelli.com/">Guido Caldarelli</a> (IMT Lucca, Italy)<br />Invited Talk: <strong>Multilevel Complex Networks</strong><a href="slides/Slides_Caldarelli.pdf"><br />(Download slides)</a></td>
+  </tr>
+ <tr  bgcolor="#D4DEF0">
+    <th scope="row">17:30 - 17:45</th>
+    <td>Organizers<br /><strong>Closing Statement</strong> <a href="slides/Slides_Closing.pdf"><br />(Download slides)</a></td>
+  </tr>    
+</table>
+
+<p>Please note that between 18:00 - 20:00 there will be an opening reception with Hor d'Oevres, wine and beer. This opening reception will be in the Ginko Courtyard of the Clark Kerr campus. It is open to all participants of the satellite workshops as well as the main conference.
+        </section>     
+        
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+      </div>
+
+<footer class="container">
+  <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2014">Tweet</a>      
+  <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+  <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+</footer>            
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
