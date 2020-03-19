@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>HONS 2019</title>
+
+        <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+        <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/abstracts.css" type="text/css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="javascripts/jquery.nivo.slider.pack.js"></script>
+        <script src="javascripts/menu.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#nav_menu_main").load("menu.html");
+                $("#nav_menu_small").load("menu.html");
+                $("#sidebar").load("sidebar.html");
+
+                $('#slider').nivoSlider();
+
+                $('.menu.dropdown ul li').click(function(){
+                    $(this).find('ul').toggle();
+                });      
+            });      
+        </script>  
+    </head>
+
+    <body>    
+        <header class="page">
+            <div class="container">
+
+                <div class="sixteen columns logo">
+                    <h3><a href="index.html">HONS 2019</a></h3>          
+                    <div class="menu full">          
+                        <ul id="nav_menu_main"></ul>
+                    </div>          
+
+                    <div class="menu dropdown">
+                        <ul>
+                            <li><a href="#">Menu</a>              
+                                <ul id="nav_menu_small"></ul>              
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>        
+            </div>
+        </header>    
+
+        <div class="container">
+            <!-- InstanceBeginEditable name="ContentArea" -->
+            <section class="eleven columns content">
+                <h3>Program</h3>
+                <p>When? <strong>Tuesday May 28 2019, 08:30 - 12:15</strong></p>
+                <p>Where? <strong><a href="https://www.uvm.edu/sites/default/files/Dudley-H.-Davis-Center/DavisCenterFloorplans.pdf">University of Vermont Davis Center, Frank Livak Room</a></strong></p>
+                <section class="eleven columns content">
+
+                    <p>We are proud to present a high-quality program with speakers from different communities. Speakers who want to publish their talks after the satellite can send their slides via <a href="mailto:scholtes@ifi.uzh.ch">E-Mail</a>.</p>
+
+                    <style>
+th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+                    </style>
+                    <table width="100%">
+                        <tr>
+                            <th scope="col" width="100px"><strong>Time</strong></th>
+                            <th scope="col"><strong>Presenter</strong></th>
+                        </tr>
+                        <tr bgcolor="#D4DEF0">
+                            <th scope="row">08:30 - 08:45</th>
+                            <td>Ingo Scholtes<br /><strong>Opening Statement</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>Session chair:</em></th>
+                            <td><em>Ingo Scholtes</em></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">08:45 - 09:10</th>
+                            <td><a href="https://www.stat.colostate.edu/~bailey/">Bailey Fosdick</a> (Department of Statistics, Colorado State University, CO, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Inferring Influence Networks from Longitudinal Bipartite Relational Data 
+                                    <span style="width:500px;">Longitudinal bipartite relational data characterize the evolution of relations between pairs of actors, where actors are of two distinct types and relations exist only between disparate types. A common goal is to understand the temporal dependencies, specifically which actor relations incite later actor relations. There are two primary approaches to this problem. The first projects the bipartite data in each time period to a unipartite network and uses existing unipartite network models. Unfortunately, information is lost in calculating the projection and generative models for networks obtained through this process are scarce. The second approach represents dependencies using two unipartite influence networks, corresponding to the two actor types. Existing models taking this approach are bilinear in the influence networks, creating challenges in computation and interpretation. In this talk, we introduce a novel generative model that permits estimation of weighted, directed influence networks and does not suffer from these shortcomings.  </span>
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">09:10 - 09:35</th>
+                            <td><a href="https://www.cs.cornell.edu/~arb/">Austin R. Benson</a> (Department of Computer Science, Cornell University, USA)<br />Invited Talk: <span class="dropt" title="Abstract"> Graph-based Semi-Supervised Learning for Edge Flows
+                                    <span style="width:500px;">We develop a graph-based semi-supervised learning method for learning edge flows defined on a graph. Specifically, we are given flow measurements on a subset of edges and want to predict the flows on the remaining edges. To this end, we develop a computational framework that imposes certain constraints on the overall flows, such as (approximate) flow conservation. These constraints render our approach different from classical graph-based semi-supervised learning for vertex labels, which posits that tightly connected nodes share similar labels and leverages the graph structure accordingly to extrapolate from a few vertex labels to the unlabeled vertices. We demonstrate our method on traffic flow data on road networks.</span>
+                                </span><br /><a href="slides/AustinBenson.pdf">[Download slides]</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">09:35 - 10:00</th>
+                            <td><a href="http://www.mkivela.com/">Mikko Kivel&auml;</a> (Department of Computer Science, Aalto University, FI)<br />Invited Talk: <span class="dropt" title="Abstract"> Microcanonical randomized reference models for temporal networks
+                            <span style="width:500px;">Temporal networks have turned out to be a useful and popular generalization of a simple static graph. The higher-order interactions in temporal networks have lead to a surge of various ways of constructing randomized reference models which are implemented as procedures of shuffling these interactions in empirical data. These models have turned out to be a versatile toolbox for studying temporal networks, but at the same time these models and their relationships to each other have been poorly understood, rendering their use non-trivial and susceptible to misinterpretation. I will talk about the framework of microcanonical randomized reference models (MRRMs), which are defined as ensembles of random networks with given features constrained to match those of an input (empirical) network. MRRMs can be used as a unified framework for classifying and understanding of various reference models in the literature. This framework can be used to build a taxonomy of such model that proposes a canonical naming convention, classifies them, and deduces their effects on a range of important network features. Furthermore certain classes of compatible MRRMs may be applied in sequential composition to generate over a hundred new MRRMs from the existing ones we have surveyed. I will give examples of how to use these models to systematically analyse a range of features and how to add new models to this framework. The modeling framework itself is not dependent on temporal networks as object of study, but could potentially be applied to any other higher-order network structure in which there are a large number of meaningful ways of randomizing the observed data.
+                           </span>
+                            </span><br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>
+                            </td>
+                        </tr>
+
+
+                        <tr bgcolor="#D4DEF0">
+                            <th scope="row">10:00 - 10:30</th>
+                            <td>Coffee Break and Poster Session</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>Session chair:</em></th>
+                            <td><em>Ingo Scholtes</em></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10:30 - 10:55</th>
+                            <td><a href="https://www.maths.ox.ac.uk/people/heather.harrington">Heather Harrington</a> (Mathematical Institute, University of Oxford, UK)<br />Invited Talk: <span class="dropt" title="Abstract">Topological data analysis for investigation of dynamics and networks <br />
+                                    <span style="width:500px;">
+                                        Persistent homology (PH) is a technique in topological data
+                                        analysis that allows one to examine features in data across multiple
+                                        scales in a robust and mathematically principled manner, and it is
+                                        being applied to an increasingly diverse set of applications. We
+                                        investigate applications of PH to dynamics and networks, focusing on
+                                        two settings: dynamics <i>on</i> a network and dynamics <i>of</i> a
+                                        network.<br /><br />
+
+                                        Dynamics on a network: a contagion spreading on a network is
+                                        influenced by the spatial embeddedness of the network. In modern day,
+                                        contagions can spread as a wave and through the appearance of new
+                                        clusters via long-range edges, such as international flights. We study
+                                        contagions by constructing ‘contagion maps’ that use multiple
+                                        contagions on a network to map the nodes as a point cloud. By
+                                        analyzing the topology, geometry, and dimensionality of manifold
+                                        structure in such point clouds, we reveal insights to aid in the
+                                        modelling, forecast, and control of spreading processes.<br /><br />
+
+                                        Dynamics of a network: one can construct static graph snapshots to
+                                        represent a network that changes in time (e.g. edges are
+                                        added/removed). We show that partitionings of a network of
+                                        random-graph ensembles into snapshots using existing methods often
+                                        lack meaningful temporal structure that corresponds to features of the
+                                        underlying system. We apply persistent homology to track the topology
+                                        of a network over time and distinguish important temporal features
+                                        from trivial ones. We define two types of topological spaces derived
+                                        from temporal networks and use persistent homology to generate a
+                                        temporal profile for a network. We show that the methods we apply from
+                                        computational topology can distinguish temporal distributions and
+                                        provide a high-level summary of temporal structure.
+                                    </span>
+                                </span>
+                            </td>   
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10:55 - 11:20</th>
+                            <td><a href="https://www.networkscienceinstitute.org/people/timothy-larock">Timothy LaRock</a> (Network Science Institute, Northeastern University, USA)<br />Invited Talk: <span class="dropt" title="Abstract">Detecting Path Anomalies in Time Series Data on Networks
+                                    <span style="width:500px;">Abstract: We are often interested in studying the mechanisms behind sequential movement through networks, such as humans moving through transportation networks or seeking information by navigating the web. Understanding sequential data on networks requires the development of appropriate representations and null models to compare observed data against. In this talk, we present a null model for higher-order de Bruijn graphs based on the Generalized Hypergeometric Ensemble of Graphs, a generalization of the configuration model. We show how this null model can be applied to discover pathways that occur statistically significantly more or less often in the observed data than expected at random, which we name path anomalies. We then analyze path anomalies detected in synthetic and real-world data, demonstrating how these anomalies inform our understanding of the underlying system.</span>
+                                </span><br /><a href="https://tlarock.github.io/img/NetSci_HONS_2019.pdf">[Download Slides]</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11:20 - 11:45</th>
+                            <td><a href="https://alexbovet.github.io/">Alexandre Bovet</a> (ICTEAM, UC Louvain, BE)<br />Invited Talk: <span class="dropt" title="Abstract">Community detection in non-stationary temporal networks <br />
+                                    <span style="width:500px;">Many temporal networks exhibit non-stationary dynamics, such as cyclical patterns due to daily, weekly, seasonal or yearly cycles, increase or decrease in population size or drastic change of dynamical regime.
+                                        Several works have generalized existing community detection methods for static networks to temporal networks, but they usually rely on the assumption of an underlying stationary process, or sequences of different stationary epochs, and a null model corresponding to the stationary state of the process.
+                                        Here, we propose first-principle method allowing to take into account continuous time temporal networks, interactions that may have a duration and systems that non-necessarily reach a steady state, or follow a sequence of stationary states.
+                                        Our approach is based on the concept of the stability of a network partition generalized to temporal networks with non-Markovian and non-stationary dynamics.
+                                        This is achieved by looking at the autocorrelation of scalar signals on the network nodes as observed by continuous time random walkers respecting the activation time of edges.
+                                        In our case, the null model of random walk transition probabilities does not assume the existence of a stationary state of the random walks.
+                                        This approach opens the doors for the definition of new concepts of spatio-temporal network structures to detect cyclical or transient structures.
+                                        We show how our method, applied to datasets of contact networks, allows to recover the community dynamics.
+                                    </span>
+                                </span></td> 
+                        </tr>
+                        <tr bgcolor="#D4DEF0">
+                            <th scope="row"><em>New</em></th>
+                            <td>Young@HONS Session</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11:45 - 12:00</th>
+                            <td><a href="https://www.sg.ethz.ch/team/people/cgote/">Christoph Gote</a> (ETH Z&uuml;rich, Zurich, CH)<br />Talk: <span class="dropt" title="Abstract"> Multi-order network models based on path data
+                                    <span style="width:500px;">In this talk we propose a generalised the multi-order graph model considering both inter-layer and intra-layer transitions between higher-order models up to a maximum model order. Resulting multi-order models are fully described by a supra-transition matrix motivated by the concept of supra-adjacency matrix used in the domain of multi-layer models. We provide a method for model selection, allowing to determine the most suitable maximum model order based on AIC. To this end, we show how AIC computation is adjusted to model paths in sparse networks. Finally, we show preliminary results demonstrating how the resulting multi-order models can be used for path generation as well as path length prediction. 
+                                      </span></span>
+                            </td>      
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12:00 - 12:15</th>
+                            <td><a href="https://www.ifi.uzh.ch/en/dag/people/petrovic.html">Luka Petrovi&cacute;</a> (Department of Computer Science, University of Zürich, CH)<br />Talk: <span class="dropt" title="Abstract">Counting Causal Paths in Temporal Networks
+                                    <span style="width:500px;">Static network models do not give a complete picture of paths in a temporal network, because the arrow of time prohibits many paths that exist in the time-aggregated, static network. Higher-order models fitted to the statistics of paths in temporal networks can mend this deficiency. They can be used to improve model selection of higher order models, diffusion models, centrality rankings, and clustering in temporal networks. Contributing to the focus of this satellite, in this talk I will show how to efficiently obtain statistics of paths of finite length from a temporal network.</span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr  bgcolor="#D4DEF0">
+                            <th scope="row">12:15</th>
+                            <td>Organizers<br /><strong>Closing Statement</strong>  </td>
+                        </tr>    
+                    </table>
+
+                </section>
+            </section>
+            <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+        </div>
+
+        <footer class="container">
+            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+            <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+        </footer>            
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </body>
+</html>
