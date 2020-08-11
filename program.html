@@ -121,7 +121,35 @@ th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:
 						<tr>
                             <th scope="row">15:15 - 15:45</th>
                             <td><a href="https://www.ifi.uzh.ch/en/dag/people/petrovic.html">Luka Petrovi&cacute;</a> (Department of Computer Science, University of Zürich, CH)<br />Invited Talk: <span class="dropt" title="Abstract"> Bayesian Selection of Optimal Higher-Order Network Models
-                            <span style="width:500px;">tbd
+                            <span style="width:500px;">
+								The analysis of relational data from the perspective of graphs or networks gives important insights into the structure of complex systems.
+However, rich data sources increasingly capture more than just the network topology, which introduces both new challenges and opportunities.
+One example are high-resolution time-stamped data, which enable us to infer how information propagates through a network, how humans travel in transportation networks, or in which chronological order social interactions occur.
+Such time series data naturally gives rise to \emph{paths}, i.e. ordered and non-dyadic sequences of nodes that capture the sequence in which the elements of a complex system influence each other.
+Due to the fundamentally non-dyadic nature of paths, the analysis of such data in terms of graph or network models is an open challenge.
+To address this challenge, researchers have proposed different types of higher-order network models. 
+Those models are able to capture temporal-topological patterns in time series data on networks and give important new insights into the structure and dynamics of complex systems.
+A fundamental issue in those works is model selection, i.e. the need to determine the optimal order of a higher-order model given the patterns in the data.
+It is aggravated by the high dimensionality of higher-order models, which increases both the potential of overfitting as well as the amount of data required to reasonably fit a model.
+Previous works have mainly addressed this issue using heuristic approaches, information-theoretic methods, hypothesis testing techniques.
+Existing works on Bayesian selection of higher-order models in categorical sequence data did not account for the fact that the sequence of nodes on paths is constrained by an underlying network topology.
+
+Addressing this gap, we develop a Bayesian technique to select the optimal order of higher-order models based on data capturing paths in networks.
+Extending the previously proposed modelling framework, our method includes a prior for transition probabilities that accounts for constraints imposed on paths in a known underlying network.
+We evaluate our method in synthetically generated data with a varying number of paths generated in random Erdos-Renyi networks, where the optimal order of a higher-order model is known.
+In the figure below we demonstrate our method to a data set with a known order of two, and compare it to the hypothesis testing technique.
+The results show that our Bayesian approach (bottom) outperforms the likelihood-based method (top) for small sample sizes (x-axis).
+Interestingly, the likelihood-based model selection does not give a uniform distribution of p-values even if (i) the null hypothesis is correct (orange curve in top figure) and (ii) the sample size is large.
+Hence, for large samples sizes (between $10^4$ and $10^7$ paths), the $p$-value threshold can not be interpreted as the type I error rate of the hypothesis test.
+Moreover, we observe a regime ($ \approx 10^4 - 10^5$ paths) where the method wrongly rejects the correct null hypothesis with high probability.
+In this regime the distribution of the likelihood-ratio test strongly deviates from a chi-square distribution, which undermines the assumptions of the hypothesis test.
+This leads to a tendency to overfit and can be avoided by our Bayesian method (bottom).
+This approach consistently selects the correct order with high probability for all sample sizes larger than $300$ paths.
+
+Our work highlights the benefits of Bayesian techniques to select optimal models for time series data on networks.
+The proposed method scales to large data sets and has been implemented in the Open Source network analysis package pathpy.
+We compare our method to existing model selection techniques for higher-order models of paths in networks.
+Highlighting a link between network-based models of temporal network data and machine learning, our analysis shows under which circumstances higher-order models over- or underfit patterns in time series data on networks, and how we can utilize Bayesian methods to avoid this issue.
                            </span>
                             </span>
 <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
